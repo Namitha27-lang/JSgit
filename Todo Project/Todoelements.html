@@ -1,0 +1,52 @@
+<!-- <div class="one">
+    <h1>Hello</h1>
+</div> -->
+
+<!-- <h1 class="ok">One</h1>
+<h1 class="ok">Two</h1>
+<h1 class="ok">Three</h1>
+<script>
+    // select div
+    var divs=document.querySelector(".ok")  // select first element with in the document that matches the CSS Selector
+   // divs.innerHTML="<h1>BYE</h1>"   // prints with tag
+   // console.log(divs.textContent) // prints HELLO
+   console.log(divs)
+</script> -->
+
+<!-- <script>
+    //select div
+    var divs=document.querySelectorAll(".ok")  //queryseectorall selects all in the array
+    for(count=0;count<divs.length;count=count+1){
+        console.log(divs[count].textContent)
+    }
+</script> -->
+
+<!-- create HTML element -->
+
+<!-- <div id="box">
+    <p>Hello</p> // Prints in Browser
+</div>
+
+<script>
+    var h1Element = document.createElement("h1")
+    h1Element.innerHTML="Bye"  // Prints as <h1>Bye</h1> in console
+    console.log(h1Element)
+</script> -->
+
+
+<!-- Adding HTML Element using append,prepend,insertadjacenthtml -->
+ <div id ="box">
+    <p>Hari</p>
+ </div>
+
+ <script>
+    // var divs = document.querySelector("div")
+    // divs.prepend("Hello")  //prints before h1 tag
+  //  divs.append("Hello")  // prints after h1 tag
+  var h1Element=document.createElement("h1")
+  h1Element.textContent="Hello"
+  var divbox=document.getElementById("box")
+  divbox.insertAdjacentElement("beforebegin",h1Element)
+  h1Element.remove() // to remove the element
+  
+ </script>
